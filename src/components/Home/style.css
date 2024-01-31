@@ -1,0 +1,22 @@
+/* Home */
+
+.home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 12fr;
+}
+
+/* @media( min-width: 0px ) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media( min-width: 800px ) {
+  .home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 12fr;
+  }
+} */

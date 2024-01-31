@@ -1,0 +1,80 @@
+.settings {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 90vh;
+}
+
+.settings .go-back {
+  color: #afa5dd;
+}
+
+.settings h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.settings-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  padding: 0 10px 20px 10px;
+}
+
+.settings .setting {
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.setting-dark {
+  background-color:#8d8d8d
+}
+
+.setting-light {
+  background-color:rgb(174 139 211)
+}
+
+.setting-type-dark {
+  background-color:rgb(112 112 112);
+}
+
+.setting-type-light {
+  background-color:rgb(205 186 225);
+}
+
+.setting .setting-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.accordion {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accordion button {
+  background-color: #8774E1;
+  border-radius: 20px;
+  padding: 8px 5px;
+  color: #fff;
+  width: 100%;
+}
+
+.delete-account .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #d00000;
+  font-weight: 700;
+}

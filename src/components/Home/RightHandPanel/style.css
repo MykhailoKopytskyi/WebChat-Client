@@ -1,0 +1,5 @@
+.right-hand-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

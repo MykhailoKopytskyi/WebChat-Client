@@ -1,0 +1,23 @@
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.input-search {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: #BBBBBB;
+}
+
+
+/* search results */
+

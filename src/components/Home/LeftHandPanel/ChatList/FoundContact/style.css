@@ -1,0 +1,11 @@
+.new-chat {
+  color: #fff;
+  padding: 15px;
+}
+
+.new-chat button {
+  background-color: #8774E1;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+}

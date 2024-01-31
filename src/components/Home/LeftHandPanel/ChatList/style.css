@@ -1,0 +1,31 @@
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  max-height: 100vh;
+  padding: 5px;
+}
+
+.found-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:black; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(88, 90, 92); 
+}

@@ -1,0 +1,8 @@
+.left-hand-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+  background-color: #313131;
+  min-width: 300px;
+}
