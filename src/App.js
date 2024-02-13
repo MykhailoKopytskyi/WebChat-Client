@@ -1,5 +1,5 @@
 //hooks
-import { useEffect, useState } from "react";
+import { useState } from "react";
 //socket io client
 import {io} from "socket.io-client";
 //react router dom hooks and components
@@ -12,23 +12,17 @@ import Login from "./components/Login";
 import CreateAccount from "./components/CreateAccount";
 import Home from "./components/Home/Home";
 import ConfirmCreation from "./components/ConfirmCreation";
-import ChatHistory from "./components/Home/RightHandPanel/ChatHistory/ChatHistory";
-import Settings from "./components/Home/LeftHandPanel/Settings/Settings";
 import ConfirmRemoval from "./components/ConfirmRemoval";
 //context
 import Context from "./context/context";
-import Loading from "./components/shared/Loading";
-
-
 import RightHandPanel from "./components/Home/RightHandPanel/RightHandPanel";
+//config
+import configuration from "./config/config";
 
-
-const socket = io("ws://localhost:5000/" , {
+const socket = io(configuration.apiEndpoints.websocket , {
   withCredentials: true,
   autoConnect: false,
 })
-
-
 
 function App() {
 
@@ -44,13 +38,11 @@ function App() {
     localStorage.setItem("messageTextSize", 16)
   }
 
-  // Global hook
+  // Global hooks
   const [mainData, setMainData] = useState({ username:null,chats:null,messages:null,userID:null });
-
   const [language,setLanguage] = useState(localStorage.getItem("language"));
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
   const [messageTextSize, setMessageTextSize] = useState(localStorage.getItem("messageTextSize"));
-
 
   const contextObject = {
     mainDataHandler: {
@@ -70,9 +62,7 @@ function App() {
       messageTextSize,
       setMessageTextSize
     }
-    
   }
-
 
   return (
     <Context.Provider value={contextObject} >
@@ -90,7 +80,6 @@ function App() {
         </Routes>
       </div>
     </Context.Provider>
-
   )
 }
 

@@ -6,7 +6,6 @@ import { useContext,useEffect,useState } from "react";
 import { displayLanguage } from "../../../../../utils/displayLanguage";
 
 const Language = () => {
-
   //hooks
   const [isAccordion, setIsAccordion] = useState(false);
 

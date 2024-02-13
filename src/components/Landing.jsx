@@ -13,7 +13,6 @@ import Loading from './shared/Loading';
 //utils
 import { displayLanguage } from '../utils/displayLanguage';
 
-
 const Landing = () => {
   // Local hook
   const [loading, setLoading] = useState(false);
@@ -41,9 +40,8 @@ const Landing = () => {
       }
       return parsedData;
     } )
-    .then( (parsedData) => { 
+    .then( () => { 
       navigate("/home"); 
-      console.log(parsedData) 
     })
     .catch( (e) => {
       console.log(JSON.parse(e.message)); 

@@ -7,7 +7,6 @@ import { useContext } from "react";
 //utils
 import { displayLanguage } from "../../../../../utils/displayLanguage";
 
-
 const Chat = (props) => {
   //context
   const context = useContext(Context);
@@ -45,7 +44,6 @@ const Chat = (props) => {
     minutes = `${sendTime.getMinutes()}`.padStart(2,"0");
     concatTime = `${hours}:${minutes}`;
   }
-
 
   return (
     <div className={`chat ${active ? "active-link" : ""}`} >

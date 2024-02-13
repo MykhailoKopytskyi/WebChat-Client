@@ -6,7 +6,6 @@ import { useContext,useState } from "react";
 import { displayLanguage } from "../../../../../utils/displayLanguage";
 
 const MessageTextSize = () => {
-
    //hooks
     const [isAccordion, setIsAccordion] = useState(false);
 
@@ -16,8 +15,7 @@ const MessageTextSize = () => {
     const setMessageTextSize = context.messageTextSizeHandler.setMessageTextSize;
     const language = context.languageHandler.language;
     const theme = context.themeHandler.theme;
-
-
+    
     const setChosenMessageTextSize = (e) => {
       setMessageTextSize(e.target.value);
       localStorage.setItem("messageTextSize", e.target.value);
@@ -37,7 +35,6 @@ const MessageTextSize = () => {
         <i className={`fa-solid fa-arrow-${isAccordion ? "up" : "down" }`}></i>
       </div>
 
-
       {isAccordion &&   
       <div className="accordion" >
         
@@ -45,10 +42,7 @@ const MessageTextSize = () => {
           <input type="range" id="messageTextSize" min={10} max={30} step={1} value={messageTextSize} onChange={ (e) => setChosenMessageTextSize(e) } />
           <label htmlFor="messageTextSize">{messageTextSize}</label>
         </div>
-
       </div>}
-
-
     </div>
   )
 }

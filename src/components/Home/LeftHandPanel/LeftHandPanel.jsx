@@ -1,7 +1,6 @@
 //components
 import Search from "./Search/Search";
 import ChatList from "./ChatList/ChatList";
-import Loading from "../../shared/Loading";
 import Settings from "./Settings/Settings";
 //hooks
 import { useState } from "react";
@@ -12,27 +11,15 @@ import Context from "../../../context/context";
 //hooks
 import { useContext } from "react";
 
-
-
-const LeftHandPanel = (props) => {
-
+const LeftHandPanel = () => {
   //hooks
   const [contact, setContact] = useState("");
   const [foundContacts, setFoundContacts] = useState([]);
   const [settingsOpened, setSettingsOpened] = useState(false);
 
-  // props
-  const windowWidth = props.windowWidth;
-  const isRightOpened = props.isRightOpened;
-  const setIsRightOpened = props.setIsRightOpened;
-  const isLeftOpened = props.isLeftOpened;
-  const setIsLeftOpened = props.setIsLeftOpened;
-
   //context
   const context = useContext(Context);
   const theme = context.themeHandler.theme;
-
-
 
   if(settingsOpened) {
     return (
@@ -50,5 +37,4 @@ const LeftHandPanel = (props) => {
   )
 }
 
-
-export default LeftHandPanel
+export default LeftHandPanel;

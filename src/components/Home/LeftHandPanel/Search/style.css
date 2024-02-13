@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
 }
 
 .input-search {
@@ -17,7 +16,4 @@
 .input-search::placeholder {
   color: #BBBBBB;
 }
-
-
-/* search results */
 

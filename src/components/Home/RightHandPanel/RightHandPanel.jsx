@@ -10,15 +10,13 @@ import "./style.css"
 import Context from "../../../context/context";
 //hooks
 import { useContext, useEffect } from "react";
-
+//outlet
 import { useOutletContext } from "react-router-dom";
 
 const RightHandPanel = () => {
-
   // outlet context (props)
   const props = useOutletContext()[0];
   const windowWidth = props.windowWidth;
-  const isRightOpened = props.isRightOpened;
   const setIsRightOpened = props.setIsRightOpened;
   const isLeftOpened = props.isLeftOpened;
   const setIsLeftOpened = props.setIsLeftOpened;

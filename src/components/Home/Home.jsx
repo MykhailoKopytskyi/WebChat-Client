@@ -11,9 +11,7 @@ import Loading from '../shared/Loading';
 //styles
 import "./style.css";
 
-
 const Home = () => {
-
   // Context
   const context = useContext(Context);
   const setMainData = context.mainDataHandler.setMainData;
@@ -59,27 +57,6 @@ const Home = () => {
      } } );
     }
 
-    // const updateMessage = (message) => {
-    //   const parsedMessage = JSON.parse(message);
-    //   const messageID = parsedMessage.messageID;
-    //   console.log("Message is received from an update, message array: ", messages)
-
-    //   let flag = false;
-    //   const updatedMessages = messages.map( (mes) => {
-    //     if(mes.messageID == messageID) {
-    //       flag = true;
-    //       return parsedMessage; // replaces the old message with the new one which has a viewed status
-    //     }
-    //     return mes
-    //   } )
-    //   if(flag == false) {
-    //     updatedMessages.push(parsedMessage)
-    //   }
-    //   console.log(flag)
-
-    //   setMainData( (prevMainData) => { return { ...prevMainData,messages: updatedMessages};});
-    // }
-
     const updateMessage = (message) => {
       const parsedMessage = JSON.parse(message);
       const messageID = parsedMessage.messageID;
@@ -117,27 +94,17 @@ const Home = () => {
     };
   }, [messages] )
 
-
-
   if(loading) {
     return <Loading/>
   }
 
   return (
     <div className='home' style={ windowWidth <=800 ? {"gridTemplateColumns": "1fr"} : {"gridTemplateColumns": "4fr 12fr"} }  >
-      {isLeftOpened && 
-      <LeftHandPanel 
-        windowWidth={windowWidth} 
-        isRightOpened={isRightOpened} 
-        setIsRightOpened={setIsRightOpened} 
-        isLeftOpened={isLeftOpened} 
-        setIsLeftOpened={setIsLeftOpened} 
-      /> }
+      {isLeftOpened && <LeftHandPanel/> }
 
       {isRightOpened &&
       <Outlet context={ [ {
         windowWidth:windowWidth ,
-        isRightOpened:isRightOpened,
         setIsRightOpened:setIsRightOpened,
         isLeftOpened:isLeftOpened,
         setIsLeftOpened:setIsLeftOpened
@@ -147,4 +114,5 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
+  

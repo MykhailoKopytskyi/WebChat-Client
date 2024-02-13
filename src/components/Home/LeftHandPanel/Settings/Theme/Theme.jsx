@@ -5,7 +5,6 @@ import { useContext,useState } from "react";
 //utils
 import { displayLanguage } from "../../../../../utils/displayLanguage";
 
-
 const Theme = () => {
  //hooks
  const [isAccordion, setIsAccordion] = useState(false);
@@ -20,7 +19,6 @@ const Theme = () => {
    setTheme(e.target.value);
    localStorage.setItem("theme", e.target.value);
  }
-
 
   return (
     <div className={`setting theme ${theme == "light" ? "setting-light" : "setting-dark"}`} >

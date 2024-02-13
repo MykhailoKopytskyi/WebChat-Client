@@ -9,8 +9,6 @@ import ErrorPopup from "../../../shared/ErrorPopup";
 //utils
 import { displayLanguage } from "../../../../utils/displayLanguage";
 
-
-
 const ChatInput = (props) => {
   //context
   const context = useContext(Context);
@@ -45,7 +43,6 @@ const ChatInput = (props) => {
     }
   }
 
-
   useEffect( () => {
     const enterClick = (e) => {
       if(e.key === "Enter") {
@@ -56,9 +53,7 @@ const ChatInput = (props) => {
     return () => window.removeEventListener("keydown", enterClick);
   } )
 
-
   return (
-
     <>
       { error ? <ErrorPopup error={error} /> : null}
 

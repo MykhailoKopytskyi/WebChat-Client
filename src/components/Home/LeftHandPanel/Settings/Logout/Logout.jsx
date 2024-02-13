@@ -15,8 +15,10 @@ const Logout = () => {
 
   //context
   const context = useContext(Context);
+  const socket = context.socket;
   const language = context.languageHandler.language;
   const theme = context.themeHandler.theme;
+  const setMainData = context.mainDataHandler.setMainData;
 
   //navigation
   const navigate = useNavigate();
@@ -29,7 +31,9 @@ const Logout = () => {
         },
       credentials: "include"
     })
-    const parsedResponse = await response.json();
+    await response.json();
+    setMainData("");
+    socket.disconnect();
     navigate("/");
   }
 
@@ -59,7 +63,6 @@ const Logout = () => {
           }
           </button>
         </div>
-
       </div>}
     </div>
   )

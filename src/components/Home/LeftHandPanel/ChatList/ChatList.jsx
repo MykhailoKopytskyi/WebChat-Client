@@ -4,12 +4,11 @@ import "./style.css";
 import Chat from "./Chat/Chat";
 import FoundContact from "./FoundContact/FoundContact";
 //hooks
-import { useContext, useState } from "react";
+import { useContext} from "react";
 //context
 import Context from "../../../../context/context";
 // react router dom component
 import { NavLink } from "react-router-dom";
-
 
 const ChatList = (props) => {
 
@@ -78,8 +77,6 @@ const ChatList = (props) => {
     }
     lastMessageInChats[curIndex] = curElement;
   }
-
-
 
   return (
     <div className='chat-list' >

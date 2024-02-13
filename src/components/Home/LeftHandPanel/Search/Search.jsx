@@ -1,14 +1,15 @@
 //hooks
-import { useState, useContext } from "react";
+import { useContext } from "react";
 //styles
 import "./style.css";
 //context
 import Context from "../../../../context/context";
 //utils
 import { displayLanguage } from "../../../../utils/displayLanguage";
+//config
+import configuration from "../../../../config/config";
 
 const Search = (props) => {
-
   //props
   const contact = props.contact;
   const setContact = props.setContact;
@@ -20,12 +21,11 @@ const Search = (props) => {
   const language = context.languageHandler.language;
   const theme = context.themeHandler.theme;
 
-
   async function searchContacts(value) {
     if(!value.trim()) {
       return;
     }
-    const response = await fetch(`http://localhost:5000/chats/search?username=${value}`, {
+    const response = await fetch(configuration.apiEndpoints.searchUser(value), {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

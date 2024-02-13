@@ -11,18 +11,14 @@ import configuration from "../../../../config/config";
 //utils
 import { displayLanguage } from "../../../../utils/displayLanguage";
 
-
 const ChatInfo = (props) => {
-
   //hooks
   const [visiblePopup, setVisiblePopup] = useState(false);
 
   //props
   const chatID = props.chatID;
   const username = props.username;
-  const setIsRightOpened = props.setIsRightOpened;
   const setIsLeftOpened = props.setIsLeftOpened;
-
   const isLeftOpened = props.isLeftOpened;
 
   //context

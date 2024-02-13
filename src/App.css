@@ -62,10 +62,6 @@ body {
   align-items: center;
 }
 
-.subtitle {
-  /* color: #fff; */
-}
-
 .title-subtitle-light {
   color: rgb(82, 82, 82);
 }
@@ -82,12 +78,7 @@ body {
   font-size: 18px;
 }
 
-
-
-
 /* login page */
-
-
 .form {
   display: flex;
   flex-direction: column;
@@ -123,7 +114,6 @@ body {
   max-width: 260px;
 }
 
-
 /* loading  */
 .loading-wrapper {
   position: absolute;
@@ -141,9 +131,7 @@ body {
   align-items: center;
 }
 
-
 /* error */
-
 .error {
   position: absolute;
   top: 0;
@@ -174,12 +162,36 @@ body {
   font-weight: bold;
 }
 
- 
-
 /* register a new account */
 .register .user-alert {
   color: rgb(234 92 92);
   font-weight: bold;
+}
+
+.credentials-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ff6565;
+}
+
+.credentials-rules h3 {
+  font-size: 13px;
+}
+
+.credentials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rules-list li::before {
+  content: "-";
+}
+
+.credentials-rules li {
+  padding-left: 20px;
+  font-size: 10px;
 }
 
 /* action confirmation */

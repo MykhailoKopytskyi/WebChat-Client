@@ -1,8 +1,8 @@
 //styles
 import "./style.css";
+//context
 import Context from "../../../../../context/context";
 import { useContext } from "react";
-
 
 const Message = (props) => {
   //context
@@ -10,8 +10,6 @@ const Message = (props) => {
   const myUserID = context.mainDataHandler.mainData.userID;
   const messageTextSize = context.messageTextSizeHandler.messageTextSize;
   const theme = context.themeHandler.theme;
-
-  // console.log(messageTextSize)
 
   //props message
   const messageText = props.message.messageText;

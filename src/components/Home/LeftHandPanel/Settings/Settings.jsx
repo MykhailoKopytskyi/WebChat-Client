@@ -13,9 +13,7 @@ import DeleteAccount from "./DeleteAccount/DeleteAccount";
 //utils
 import { displayLanguage } from "../../../../utils/displayLanguage";
 
-
 const Settings = (props) => {
-
   //props
   const setSettingsOpened = props.setSettingsOpened;
 
@@ -47,7 +45,6 @@ const Settings = (props) => {
         <Logout/>
         <DeleteAccount/>
       </div>
-
     </div>
   )
 }

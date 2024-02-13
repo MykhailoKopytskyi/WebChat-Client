@@ -2,8 +2,6 @@
 import Context from "../../../../../context/context";
 //hooks
 import { useContext,useState } from "react";
-// react router dom
-import { useNavigate } from "react-router-dom";
 //config
 import configuration from "../../../../../config/config";
 //utils

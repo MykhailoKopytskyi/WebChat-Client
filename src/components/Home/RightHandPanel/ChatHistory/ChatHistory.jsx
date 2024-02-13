@@ -7,7 +7,6 @@ import Context from "../../../../context/context";
 //styles
 import "./style.css";
 
-
 const ChatHistory = (props) => {
   //props
   const chatID = props.chatID;
