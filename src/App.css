@@ -24,12 +24,12 @@ body, html {
 
 body {
   font-family: "Arial";
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .App {
   width: 100%;
-  height: 100%;
+  height: 100vh !important;
   display: flex;
   background-color: #212121;
 
@@ -118,7 +118,7 @@ body {
 .loading-wrapper {
   position: absolute;
   /* background-color: rgba(0, 0, 0, 1); */
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(33, 33, 33);
   left: 0;
   top: 0;
   width: 100%;
@@ -164,15 +164,16 @@ body {
 
 /* register a new account */
 .register .user-alert {
-  color: rgb(234 92 92);
+  color: rgb(255, 94, 20);
   font-weight: bold;
+  font-size: 18px;
 }
 
 .credentials-rules {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #ff6565;
+  color: #65ca4c;
 }
 
 .credentials-rules h3 {
@@ -191,7 +192,7 @@ body {
 
 .credentials-rules li {
   padding-left: 20px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* action confirmation */

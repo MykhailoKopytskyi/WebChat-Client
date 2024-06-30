@@ -174,9 +174,9 @@ const CreateAccount = () => {
               </li>
               <li>
                 { displayLanguage(language, {
-                  english: "Must include at least 1 letter, 1 number and 1 symbol",
-                  ukrainian: "Має містити принаймні 1 букву, 1 цифру та 1 символ",
-                  russian: "Должно содержать как минимум 1 букву, 1 цифру и 1 символ."
+                  english: "Must include at least 1 letter and 1 number",
+                  ukrainian: "Має містити принаймні 1 букву та 1 цифру",
+                  russian: "Должно содержать как минимум 1 букву и 1 цифру"
                 }) }
               </li>
             </ul>

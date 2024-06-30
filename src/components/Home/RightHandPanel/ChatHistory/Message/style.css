@@ -18,11 +18,15 @@
 
 .status-send-date {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px
+  flex-direction: column;
+  gap: 2px;
 }
 
 .status-send-date .status {
   color: #52ff11;
+  font-size: 12px;
+}
+
+.send-date{
+  font-size: 12px;
 }
