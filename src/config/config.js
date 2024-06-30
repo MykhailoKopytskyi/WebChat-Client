@@ -1,15 +1,15 @@
 const configuration = {
   apiEndpoints: {
-    websocket: "ws://localhost:5000/",
-    login: "http://localhost:5000/account/session",
-    logout: "http://localhost:5000/account/session",
-    register: "http://localhost:5000/account",
-    deleteAccount: "http://localhost:5000/account",
-    createChat: "http://localhost:5000/chats",
-    removeChat: "http://localhost:5000/chats",
+    websocket: "ws://13.60.17.115:80/",
+    login: "http://13.60.17.115:80/account/session",
+    logout: "http://13.60.17.115:80/account/session",
+    register: "http://13.60.17.115:80/account",
+    deleteAccount: "http://13.60.17.115:80/account",
+    createChat: "http://13.60.17.115:80/chats",
+    removeChat: "http://13.60.17.115:80/chats",
     searchUser: (username) => {
-      return `http://localhost:5000/chats/search?username=${username}`
-    }
+      return `http://13.60.17.115:80/chats/search?username=${username}`
+    } 
   },
 
   validation: {

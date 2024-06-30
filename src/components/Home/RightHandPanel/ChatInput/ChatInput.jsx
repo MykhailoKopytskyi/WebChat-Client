@@ -8,6 +8,9 @@ import { useContext, useState, useEffect } from "react";
 import ErrorPopup from "../../../shared/ErrorPopup";
 //utils
 import { displayLanguage } from "../../../../utils/displayLanguage";
+//UUID
+import { v4 as uuidv4 } from "uuid"
+
 
 const ChatInput = (props) => {
   //context
@@ -33,7 +36,7 @@ const ChatInput = (props) => {
       return;
     }
     const messageObj = {
-      messageID: crypto.randomUUID(),
+      messageID: uuidv4(),
       chatID: chatID,
       messageText: text
     }
