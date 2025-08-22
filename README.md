@@ -39,6 +39,6 @@ Do a ``git clone`` or install a .zip file of this repository. Same for the WebCh
 
 ## Usage
 1. Once installed, navigate to each of the target folders (client and server) and run ``npm i``.
-2. In order to run the app, you need to install the DBMS, you then need to change .env file in WebChat-Server repository to match your credentials (I deliberately posted .env file on Github). 
+2. In order to run the app, you need to install the DBMS, you then need to change .env file in WebChat-Server repository to match your credentials (I deliberately posted .env file on Github). Also run the code from WebChat-Database repository to create the database structure.
 3. Then you need to find another email provider and setup your account and put its credentials in the .env file (the credentials for my account have been changed, so you will not be able to use it).
 4. Once done, make sure your DBMS is on. Then navigate to WebChat-Server directory and run ``node app`` and then navigate to WebChat-Client directory and run ``npm start``. 
